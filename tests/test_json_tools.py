@@ -11,3 +11,7 @@ def test_count_keys():
 
     data = {"A": {"B": {"C": 1}}}
     assert count_keys(data) == 3
+
+def test_real_case():
+    data = {"name": "Emmanuel", "address": {"city": "Caen", "zip": "14000"}, "skills": {"python": True, "qt": True}}
+    assert count_keys(data) == 7
